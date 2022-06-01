@@ -28,6 +28,6 @@ This function works by the same mechanism as encrypt(), but, in the left directi
 ## Workflow 
 Simple "if" statement determines, on the base of user "direction" input, which function will be used. Then, printed f string displays returned string in the terminal.
 
-## Running the game
+## Running the program
 This game is intended to be run by Python IDE or other Python interpeter. 
 To install Python 3 see [Tutorials Point page](https://www.tutorialspoint.com/how-to-install-python-in-windows).
