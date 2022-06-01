@@ -1,7 +1,8 @@
 # Caesar's cipher
 The program is Python script version of one of the simplest encryption techniques.
 ## Use
-It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence. [Source: Wikipedia](https://en.wikipedia.org/wiki/Caesar_cipher)
+It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.  [Source: Wikipedia](https://en.wikipedia.org/wiki/Caesar_cipher).
+
 This program does encoding in right shift, and decoding in left shift.
 When program is being run, the user will be asked for:
 - direction (encode or decode)
