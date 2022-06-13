@@ -3,12 +3,14 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
             'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 signs = [".", ",", "?", "!", ":", ";", " "]
+
 direction = input("Write \"encode\" for encoding or \"decode\" for decoding: ").lower()
 text_input = input("Your text: ").lower()
 moving_rate = int(input("How many places you want to move your letters? "))
 
 
-def encrypt(text, change):
+def encrypt(text: str, change: int):
+    """ This function moves letter backward for number of positions specified by 'change' argument"""       
     ciphered = ""
     for letter in text:
         if letter in signs:
@@ -22,6 +24,7 @@ def encrypt(text, change):
 
 
 def decrypt(text, change):
+    """ This function moves letter forward for number of positions specified by 'change' argument"""   
     deciphered = ""
     for letter in text:
         if letter in signs:
@@ -33,10 +36,10 @@ def decrypt(text, change):
             deciphered += new_letter
     return deciphered
 
-
-if direction == "encode":
-    print(f"Your word is ciphered as: {encrypt(text=text_input, change=moving_rate)}")
-elif direction == "decode":
-    print(f"Your word is deciphered as: {decrypt(text=text_input, change=moving_rate)}")
-else:
-    print("Error, check your input")
+if __name__ == __main__:
+    if direction == "encode":
+        print(f"Your word is ciphered as: {encrypt(text=text_input, change=moving_rate)}")
+    elif direction == "decode":
+        print(f"Your word is deciphered as: {decrypt(text=text_input, change=moving_rate)}")
+    else:
+        print("Error, check your input")
