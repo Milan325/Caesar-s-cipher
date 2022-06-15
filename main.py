@@ -36,7 +36,7 @@ def decrypt(text, change):
             deciphered += new_letter
     return deciphered
 
-if __name__ == __main__:
+if __name__ == "__main__":
     if direction == "encode":
         print(f"Your word is ciphered as: {encrypt(text=text_input, change=moving_rate)}")
     elif direction == "decode":
